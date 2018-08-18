@@ -32,9 +32,13 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'mechanize', '~> 2.7', '>= 2.7.5'
+# gem 'mechanize', '~> 2.7', '>= 2.7.5'
 gem 'cassandra-driver'
 gem 'watir'
+
+gem 'sprockets', '~> 3.7.2' # Address security vulerability in 3.7.1
+# gem 'rails-html-sanitizer', '~> 1.0.4' # Address security vulerability in 1.0.3
+# gem 'loofah', '~> 2.2.1' # Address security vulerability in 2.2.0
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
